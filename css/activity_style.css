@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/*すべてのWebページに適用される*/
+html{
+	font-family:sans-serif;
+} 
+html * {
+	box-sizing:border-box;
+}
+
+body{
+	margin: 0 0 0 0;
+	background-color:#FFFFED;
+}
+
+.wrapper{
+	margin: 80px auto 0px auto;
+}
+.wrapper{
+	background:url(../images/background-image.png) center center repeat ;
+
+}
+
+h1{
+	color:#3a2615;
+	font-size:40px;
+	font-weight:bold;
+	margin:15px auto;
+	text-align:center;
+}
+
+h2{
+	color:#3a2615;
+	font-size:30px;
+}
+
+p{
+	line-height:1.5;
+}
+a:link{
+	color:#e99e52;
+}
+a:visited{
+	color:#e99e52;
+}
+a:hover{
+	color:#ffbe7d;
+}
+a:active{
+	color:#ffa861;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h2 img{
+	max-width: 40%;
+}
+/* 固定ナビゲーションバー */
+.fixed_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(35, 30, 13, 0.8); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; 
+} 
+.fixed_nav a {
+    color: #fff;
+    text-decoration: none;
+}
+        .fixed_nav a:hover {
+            color: #ccc; 
+        }
+.nav_left {
+    flex: 1;
+    text-align: left;
+}
+.nav_left img{
+   max-width: 110px;
+}
+.nav_right {
+    flex: 2;
+    text-align: right;
+    margin:0 30px 0 0;
+	font-weight: bolder;
+}
+.nav_right a {
+    margin: 0 20px;
+    padding:22px 17px;
+}
+.nav_right span {
+    color: #fff;
+}
+
+
+/* スマホサイズのハンバーガーメニューアイコン */
+.mobile_menu_icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    color: #fff;
+}
+
+/* ハンバーガーメニューのスタイル */
+.mobile_menu {
+    display: none;
+    flex-direction: column;
+    background-color: #3a2615;
+    position: fixed;
+    top: 70px; 
+    right: 0;
+    width: 200px;
+    z-index: 1000;
+}
+.mobile_menu.active {
+    display: flex;
+}
+.mobile_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mobile_menu ul li {
+    border-bottom: 1px solid #fff;
+}
+.mobile_menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.mobile_menu a:hover{
+	background-color: #8d4700;
+}
+
+/* 上へ戻る */
+.top{
+    position: fixed;
+	width: 150px; 
+    height: auto;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+}
+ 
+/* ヘッダー */
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo{
+	margin: -30px 0 30px 0;
+	line-height:0;
+	text-align:center;
+	vertical-align: bottom;
+}
+
+.background-header{
+    margin: -230px 0 0 0;
+	text-align:center;
+	position: relative;
+	z-index: 90;
+}
+
+.nav{
+	margin: -10px 0 0 0;
+	background:#f8f8f8;
+}
+
+.nav ul{
+	list-style: none;
+	display: flex;
+	margin: 0 auto;
+	padding:0;
+	flex-wrap: wrap;
+}
+
+.nav li{ 
+	width:25%;
+	text-align:center;
+	border-right :2px solid #ffa861;
+	vertical-align: bottom;
+}
+.nav li:last-child{
+	border-right:none;
+}
+
+.nav li a {
+	display: block;
+	padding: 20px 0;
+	width:100%;
+	font-size:20px;
+	text-decoration: none;
+}
+
+.nav li a.current{
+	background:#ffedd0;
+}
+
+/* ここから編集する /////////////////////////////////////////*/
+/* activity.html */
+
+.activity-item {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 50px 0;
+}
+
+.activity-text {
+	width: 50%;
+	height:50%;
+	color: #3a2615;
+	font-size:20px;
+	margin:0 0 0 50px;
+}
+	.activity-text h3{
+		font-weight:1000;
+		font-size:45px;
+		margin:10px 0;
+	}
+	.activity-text p{
+		font-weight: 300;
+		font-size:30px;
+		margin:0 0 15px 0;
+	}
+
+.activity-photo {
+	width: 40%;
+	height:40%;
+	aspect-ratio: 1 / 1; 
+	overflow: hidden;
+	border: 5px solid #3a2615;
+	border-radius: 10px;
+}
+
+.activity-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+  }
+
+
+/* #images */
+
+.fadein {
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 1s;
+}
+   
+.fadein.active{
+	opacity : 1;
+	transform : translate(0, 0);
+}
+
+
+/*すべてのページに適用 - フッター*/
+.background-footer{
+	margin: 0 0 -50px 0;
+	text-align:center;
+}
+.footer{
+	margin: -30px 0 0 0;
+    font-size: 20px;
+} 
+.footer p{
+	margin-bottom:20px;
+}
+
+
+/*スマートフォン向けCSS*/
+@media(max-width: 767px) {
+    /*　全体 */
+		h1{
+			font-size:23px;
+		}
+	/* ヘッダー */
+		/* ハンバーガーメニューを表示 */
+		.mobile_menu_icon {
+			display: block;
+		}
+
+		/* 通常のナビゲーションバーは非表示に */
+		.nav_right {
+			display: none;
+		}
+
+	/* スクロールしても固定されるナビゲーションバー */
+		.fixed-nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+		}
+
+	/* activity.html  ここを編集する*/	
+		h2 img{
+			max-width: 60%;
+		}
+		.activity-item {
+			display:block;
+			width: 91%;
+			margin:0 auto;
+		}
+
+		.activity-photo {
+			width:100%;
+		}
+		.activity-text {
+			width: 95%;
+			margin:0 auto;
+		}
+			.activity-text h3{
+				font-size:25px;
+				margin:10px 0 10px 0;
+			}
+			.activity-text p{
+				font-size:20px;
+				line-height: 1.5;
+			}
+
+	/*フッター*/
+		.background-footer{
+			margin: 0 0 -40px 0;
+			text-align:center;
+		}
+		.footer{
+			margin: -30px 0 0 0;
+			font-size: 13px;
+		} 
+		.footer p{
+			margin-bottom:0px;
+		}
+		.top{
+			width: 120px;
+			height: auto;
+			bottom: 10px;
+			right: 10px;
+		}
+	
+}
+
+@media(max-width: 500px) {
+	h1{
+		font-size: 17px;
+	}
+}
