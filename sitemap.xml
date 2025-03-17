@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://suzume-website.vercel.app/</loc>
+  <priority>1.0</priority>
+  <lastmod>2025-03-17T17:27:04+09:00</lastmod>
+</url>
+<url>
+  <loc>https://suzume-website.vercel.app/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2025-03-17T18:01:56+09:00</lastmod>
+</url>
+<url>
+  <loc>https://suzume-website.vercel.app/activity.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2025-03-17T17:40:58+09:00</lastmod>
+</url>
+
+</urlset>
